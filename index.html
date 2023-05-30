@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encripador de Texto</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="box">
+                <img class="logo" src="imagenes/Frame 6.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/vicente-rodriguez-hidalgo-im/" target="_blank"><img src="imagenes/linkedin.png"></a></li>
+                        <li><a href="https://github.com/VizzWard" target="_blank"><img src="imagenes/github.png"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+
+        <main class="contenido">
+            <section>
+                <div class="textarea-container">
+                    <textarea class="textArea" cols="20" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                    <img src="imagenes/borrar.png" alt="Imagen" class="borrar">
+                </div>
+
+                <div>
+                    <h6 class="informacion"> Solo letras minusculas y sin acentos</h6>
+                </div>
+
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+
+            </section>
+            
+            <section class="resultado">
+
+                <div class="textarea-container">
+                    <textarea class="mensaje" cols="20" rows="10"></textarea>
+                    <img src="imagenes/copia.png" alt="Imagen" class="btn-copiar">
+                </div>
+
+            </section>
+            <button class="fondo" id="btnCambiarFondo">F</button>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+
+
+
+</html>
